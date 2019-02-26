@@ -3,7 +3,7 @@
     Intergalactic Star Wars Database
   </h1>
 </div>
-<input placeholder="Search the Star Wars universe..." />
+<input #searchInput  placeholder="Search the Star Wars universe..." />
 <div>
   <p *ngFor="let person of people">
     {{person.name}}
