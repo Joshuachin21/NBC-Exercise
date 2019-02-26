@@ -1,12 +1,11 @@
-<div>
-  <h1>
-    Intergalactic Star Wars Database
-  </h1>
-</div>
-<input #searchInput  placeholder="Search the Star Wars universe..." />
-<div>
-  <p *ngFor="let person of people">
-    {{person.name}}
-  </p>
+<header>intergalactic Star Wars Database</header>
+<main>
+  <input type="text" #searchInput placeholder="Search the Star Wars universe..."/>
+</main>
+<div class="resultsContainer">
+  <div class="resultItem" *ngFor="let person of people">
+    <!--lowercase due to custom font-->
+    {{person.name | lowercase}}
+  </div>
 </div>
 

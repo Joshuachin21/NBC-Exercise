@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'star-wars';
+  src: url('./assets/fonts/starjedi.ttf'); /* IE9 Compat Modes */
+  src: url('./assets/fonts/starjedi.ttf?#iefix') format('truetype'), /* IE6-IE8 */
+  url('./assets/fonts/starjedi.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+body {
+  font-family: 'star-wars', sans-serif;
+  background-color: #000000;
+  display: grid;
+  grid-gap: 1em;
+}
